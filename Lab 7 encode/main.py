@@ -5,7 +5,12 @@ def encode(password): # Madasin Garrison
     return encoded_password
 
 def decode():#Evan, put your work here for decoding the password
-    print("hold")
+    decoded_string = ""
+    original = ""
+    for i in storage:
+        decoded_string = decoded_string + str(i - 3 )
+        original = original + str(i)
+    print("\nThe encoded password is", original, "and the original password is", decoded_string + ".")
 
 if __name__ == "__main__": #Madasin Garrison
     storage = [];
